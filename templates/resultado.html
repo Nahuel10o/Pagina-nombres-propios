@@ -1,0 +1,51 @@
+<!DOCTYPE htmls>
+<html>
+<head>
+  <title>Resultados</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+    
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+    
+        th, td {
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+    
+        th {
+            background-color: #00ff00;
+            color: #000;
+        }
+    
+        td {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+    
+  <h1>Resultados</h1>
+  <div>
+    {% for nombre, frecuencia in resultados %}
+    <p>{{ nombre }}: {{ frecuencia }}</p>
+{% endfor %}
+
+  </div>
+</body>
+</html>

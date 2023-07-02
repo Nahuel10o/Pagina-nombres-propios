@@ -1,0 +1,52 @@
+<!DOCTYPE htmls>
+<html>
+<head>
+    <style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        width: 80%;
+        height: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #00ff00;
+        color: #000;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #00cc00;
+    }
+</style>
+</head>
+<body>
+    <h1>Analizador de Nombres Propios</h1>
+    <form action="/analizar" method="POST">
+      <textarea name="texto" rows="5" cols="40" required></textarea>
+      <br>
+      <button type="submit">Analizar</button>
+    </form>
+  </body>
+</html>
